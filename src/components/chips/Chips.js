@@ -85,7 +85,12 @@ export class Chips extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 originalEvent: event,
-                value: values
+                value: values,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value : values
+                }
             });
         }
     }
@@ -122,7 +127,12 @@ export class Chips extends Component {
                     if (this.props.onChange) {
                         this.props.onChange({
                             originalEvent: event,
-                            value: values
+                            value: values,
+                            target: {
+                                name: this.props.name,
+                                id :  this.props.id,
+                                value : values
+                            }
                         });
                     }
                 }

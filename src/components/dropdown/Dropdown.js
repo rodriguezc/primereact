@@ -226,7 +226,12 @@ export class Dropdown extends Component {
     onEditableInputChange(event) {              
         this.props.onChange({
             originalEvent: event.originalEvent,
-            value: event.target.value
+            value: event.target.value,
+            target: {
+                name: this.props.name,
+                id :  this.props.id,
+                value : event.target.value,
+            }
         });
     }
     
@@ -272,7 +277,12 @@ export class Dropdown extends Component {
     clear(event) {
         this.props.onChange({
             originalEvent: event,
-            value: null
+            value: null,
+            target: {
+                name: this.props.name,
+                id :  this.props.id,
+                value : null
+            }
         });
         this.updateEditableLabel();
     }
@@ -284,7 +294,12 @@ export class Dropdown extends Component {
             this.updateEditableLabel(event.option);
             this.props.onChange({
                 originalEvent: event.originalEvent,
-                value: this.props.optionLabel ? event.option : event.option.value
+                value: this.props.optionLabel ? event.option : event.option.value,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value : this.props.optionLabel ? event.option : event.option.value,
+                }
             });
         } 
     }

@@ -125,7 +125,12 @@ export class Spinner extends Component {
         
         if (this.props.onChange) {
             this.props.onChange({
-                value: this.value
+                value: this.value,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value:  this.value,
+                }
             })
         }
     }
@@ -245,7 +250,12 @@ export class Spinner extends Component {
 
         if (this.props.onChange) {
             this.props.onChange({
-                value: this.value
+                value: this.value,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value:  this.value,
+                }
             })
         }
         this.updateFilledState();
@@ -265,7 +275,12 @@ export class Spinner extends Component {
 
             if (this.props.onChange) {
                 this.props.onChange({
-                    value: this.value
+                    value: this.value,
+                    target: {
+                        name: this.props.name,
+                        id :  this.props.id,
+                        value:  this.value,
+                    }
                 })
             }
         }
@@ -316,7 +331,12 @@ export class Spinner extends Component {
     onChange() {
         if (this.props.onChange) {
             this.props.onChange({
-                value: this.value
+                value: this.value,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value:  this.value,
+                }
             })
         }
     }

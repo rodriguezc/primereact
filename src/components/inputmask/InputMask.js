@@ -442,7 +442,12 @@ export class InputMask extends Component {
             var val = this.props.unmask ? this.getUnmaskedValue() : e.target.value;
             this.props.onChange({
                 originalEvent: e,
-                value: (this.defaultBuffer !== val) ? val : ''
+                value: (this.defaultBuffer !== val) ? val : '',
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value : (this.defaultBuffer !== val) ? val : '',
+                }
             })
         }
     }

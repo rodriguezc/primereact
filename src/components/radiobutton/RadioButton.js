@@ -51,7 +51,12 @@ export class RadioButton extends Component {
             this.props.onChange({
                 originalEvent: e,
                 value: this.props.value,
-                checked: !this.props.checked
+                checked: !this.props.checked,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value:  this.props.value,
+                }
             });
 
             this.input.checked = !this.props.checked;

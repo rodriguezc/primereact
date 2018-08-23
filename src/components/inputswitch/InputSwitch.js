@@ -57,7 +57,13 @@ export class InputSwitch extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 originalEvent: event,
-                value: !this.props.checked
+                value: !this.props.checked,
+                target: {
+                    type: 'checkbox',
+                    name: this.props.name,
+                    id :  this.props.id,
+                    checked: !this.props.checked,
+                }
             });
         }
     }

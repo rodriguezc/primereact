@@ -42,7 +42,12 @@ export class Rating extends Component {
         if (!this.props.readonly && !this.props.disabled && this.props.onChange) {
             this.props.onChange({
                 originalEvent: event,
-                value: i
+                value: i,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value: i
+                }
             });
         }
         
@@ -53,7 +58,12 @@ export class Rating extends Component {
         if (!this.props.readonly && !this.props.disabled && this.props.onChange) {
             this.props.onChange({
                 originalEvent: event,
-                value: null
+                value: null,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value: null
+                }
             });
         }
         

@@ -45,7 +45,13 @@ export class ToggleButton extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 originalEvent: e,
-                value: !this.props.checked
+                value: !this.props.checked,
+                target: {
+                    type: 'checkbox',
+                    name: this.props.name,
+                    id :  this.props.id,
+                    checked: !this.props.checked,
+                }
             })
         }
     }

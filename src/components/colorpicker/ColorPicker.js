@@ -161,7 +161,12 @@ export class ColorPicker extends Component {
     onChange(value) {
         if(this.props.onChange) {
             this.props.onChange({
-                value: value
+                value: value,
+                target: {
+                    name: this.props.name,
+                    id :  this.props.id,
+                    value
+                }
             })
         }
     }
