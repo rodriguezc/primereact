@@ -61,10 +61,9 @@ export class InputSwitch extends Component {
                 stopPropagation : () =>{},
                 preventDefault : () =>{},
                 target: {
-                    type: 'checkbox',
                     name: this.props.name,
                     id :  this.props.id,
-                    checked: !this.props.checked,
+                    value: !this.props.checked,
                 }
             });
         }
