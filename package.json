@@ -1,6 +1,6 @@
 {
   "name": "primereact",
-  "version": "2.0.0-beta.6-SNAPSHOT",
+  "version": "2.0.0-beta.7-SNAPSHOT",
   "homepage": "/primereact",
   "repository": {
     "type": "git",
@@ -51,5 +51,14 @@
     "compile-components": "babel src/components --out-dir components --presets es2015,react,stage-0 --copy-files",
     "build-resources": "gulp build-resources",
     "build-exports": "gulp build-exports"
+  },
+  "dependencies": {
+    "final-form": "^4.10.0",
+    "formik": "^1.3.0",
+    "react-final-form": "^3.6.5",
+    "react-redux": "^5.0.7",
+    "react-redux-form": "^1.16.10",
+    "redux": "^4.0.0",
+    "yup": "^0.26.5"
   }
 }

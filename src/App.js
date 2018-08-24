@@ -120,6 +120,10 @@ import { ProgressSpinnerDemo } from "./showcase/progressspinner/ProgressSpinnerD
 import { CardDemo } from "./showcase/card/CardDemo";
 import { KeyFilterDemo } from "./showcase/keyfilter/KeyFilterDemo";
 import { DataViewDemo } from "./showcase/dataview/DataViewDemo";
+import { FormikDemo } from "./showcase/formik/FormikDemo";
+import { FinalFormDemo } from './showcase/finalform/FinalFormDemo';
+import { ReduxFormDemo } from './showcase/reduxForm/ReduxFormDemo';
+
 
 class AppMenu extends Component {
 
@@ -544,6 +548,10 @@ class App extends Component {
                     <Route path="/keyfilter" component={KeyFilterDemo}/>
                     <Route path="/dataview" component={DataViewDemo}/>
                     <Route path="/inplace" component={InplaceDemo}/>
+                    <Route path="/formik" component={FormikDemo}/>
+                    <Route path="/finalForm" component={FinalFormDemo}/>
+                    <Route path="/reduxForm" component={ReduxFormDemo}/>
+
 
                     <div className="content-section layout-footer clearfix">
                         <span>Released under the MIT License,  Copyright © 2018 <a href="http://www.primetek.com.tr" target="_blank" rel="noopener noreferrer">PrimeTek</a></span>
