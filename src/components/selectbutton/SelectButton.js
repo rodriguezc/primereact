@@ -90,6 +90,8 @@ export class SelectButton extends Component {
             this.props.onChange({
                 originalEvent: event.originalEvent,
                 value: newValue,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

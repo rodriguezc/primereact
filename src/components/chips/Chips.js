@@ -86,6 +86,8 @@ export class Chips extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: values,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,
@@ -128,6 +130,8 @@ export class Chips extends Component {
                         this.props.onChange({
                             originalEvent: event,
                             value: values,
+                            stopPropagation : () =>{},
+                            preventDefault : () =>{},
                             target: {
                                 name: this.props.name,
                                 id :  this.props.id,

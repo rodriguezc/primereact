@@ -227,6 +227,8 @@ export class Dropdown extends Component {
         this.props.onChange({
             originalEvent: event.originalEvent,
             value: event.target.value,
+            stopPropagation : () =>{},
+            preventDefault : () =>{},
             target: {
                 name: this.props.name,
                 id :  this.props.id,
@@ -278,6 +280,8 @@ export class Dropdown extends Component {
         this.props.onChange({
             originalEvent: event,
             value: null,
+            stopPropagation : () =>{},
+            preventDefault : () =>{},
             target: {
                 name: this.props.name,
                 id :  this.props.id,
@@ -295,6 +299,8 @@ export class Dropdown extends Component {
             this.props.onChange({
                 originalEvent: event.originalEvent,
                 value: this.props.optionLabel ? event.option : event.option.value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

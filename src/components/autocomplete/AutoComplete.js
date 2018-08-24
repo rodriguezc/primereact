@@ -214,6 +214,8 @@ export class AutoComplete extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

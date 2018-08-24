@@ -443,6 +443,8 @@ export class InputMask extends Component {
             this.props.onChange({
                 originalEvent: e,
                 value: (this.defaultBuffer !== val) ? val : '',
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

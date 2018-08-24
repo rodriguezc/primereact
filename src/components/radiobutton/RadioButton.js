@@ -52,6 +52,8 @@ export class RadioButton extends Component {
                 originalEvent: e,
                 value: this.props.value,
                 checked: !this.props.checked,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

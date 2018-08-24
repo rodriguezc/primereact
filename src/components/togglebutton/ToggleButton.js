@@ -46,6 +46,8 @@ export class ToggleButton extends Component {
             this.props.onChange({
                 originalEvent: e,
                 value: !this.props.checked,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     type: 'checkbox',
                     name: this.props.name,

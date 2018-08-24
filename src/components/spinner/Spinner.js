@@ -126,6 +126,8 @@ export class Spinner extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 value: this.value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,
@@ -251,6 +253,8 @@ export class Spinner extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 value: this.value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,
@@ -276,6 +280,8 @@ export class Spinner extends Component {
             if (this.props.onChange) {
                 this.props.onChange({
                     value: this.value,
+                    stopPropagation : () =>{},
+                    preventDefault : () =>{},
                     target: {
                         name: this.props.name,
                         id :  this.props.id,
@@ -332,6 +338,8 @@ export class Spinner extends Component {
         if (this.props.onChange) {
             this.props.onChange({
                 value: this.value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

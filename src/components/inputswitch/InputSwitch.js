@@ -58,6 +58,8 @@ export class InputSwitch extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: !this.props.checked,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     type: 'checkbox',
                     name: this.props.name,

@@ -55,6 +55,8 @@ export class TriStateCheckbox extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: newValue,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

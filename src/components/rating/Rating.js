@@ -43,6 +43,8 @@ export class Rating extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: i,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,
@@ -59,6 +61,8 @@ export class Rating extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: null,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,

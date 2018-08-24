@@ -665,6 +665,8 @@ export class Calendar extends Component {
             this.props.onChange({
                 originalEvent: event,
                 value: value,
+                stopPropagation : () =>{},
+                preventDefault : () =>{},
                 target: {
                     name: this.props.name,
                     id :  this.props.id,
